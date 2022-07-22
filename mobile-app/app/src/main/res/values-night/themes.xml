@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Recycluster" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/emerald_800</item>
+        <item name="colorPrimary">@color/cyan_300</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_400</item>
+        <item name="colorSecondaryVariant">@color/emerald_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Recycluster.ActionBarEnabled" parent="Theme.Recycluster">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="ActionBar_Custom" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background"> @color/bkgd_color</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">?attr/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="startIconTint">@color/white</item>
+        <item name="endIconTint">@color/white</item>
+    </style>
+
+    <style name="materialButtonOutlinedStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">?attr/colorOnPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.Recycluster">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+</resources>

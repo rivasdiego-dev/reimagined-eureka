@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background_splash_screen" android:drawable="@color/bkgd_color" />
+    <item>
+        <bitmap android:id="@+id/splash_screen_bitmap" android:src="@drawable/app_logo2png"
+            android:gravity="center" />
+    </item>
+</layer-list>

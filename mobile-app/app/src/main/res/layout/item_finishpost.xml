@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Image_View"
+                android:layout_width="@dimen/perfil_size"
+                android:layout_height="@dimen/perfil_size"
+                android:backgroundTint="@color/black"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginStart="@dimen/default_gap"
+                android:src="@drawable/ic_baseline_person_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:text="Usuario"
+                android:textSize="@dimen/medium_font_size"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_Image_View"
+                app:layout_constraintStart_toEndOf="@id/profile_Image_View"
+                app:layout_constraintTop_toTopOf="@id/profile_Image_View" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.08" />
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2"
+                app:showNavigationButtons="true"
+                app:topShadowHeight="@dimen/line"
+                app:bottomShadowHeight="@dimen/line"
+                app:showBottomShadow="false"
+                app:showCaption="false">
+            </org.imaginativeworld.whynotimagecarousel.ImageCarousel>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carousel"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_marginStart="@dimen/default_gap"
+                android:textSize="@dimen/medium_font_size"
+                android:text="Description"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</layout>
+
+

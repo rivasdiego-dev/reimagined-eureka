@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="@string/why_are_you_reporting_this_post"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_reportReason"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xlarge_gap"
+            android:layout_marginHorizontal="@dimen/large_gap"
+            android:layout_marginVertical="@dimen/default_gap"
+            android:background="@drawable/bg_spinner_report"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_gap">
+
+            <Button
+                android:id="@+id/textButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_gap"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/cancel"
+                style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+            <Button
+                android:id="@+id/button_sendReport"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/default_gap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/button_report" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

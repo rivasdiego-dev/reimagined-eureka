@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.uca.recycluster.ui.request.viewmodel.ExchangeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/make_request_parent"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:background="@color/bkgd_color"
+        android:orientation="vertical"
+        tools:context=".ui.request.view.fragments.MakeRequestFragment">
+
+        <TextView
+            android:id="@+id/textView_requestTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_title"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <TextView
+            android:id="@+id/textView_requestSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_subtitle"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_gap"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField_requestReason"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_gap"
+            android:layout_marginVertical="@dimen/top_margin"
+            android:hint="@string/request_reason"
+            android:textColorHint="@color/white"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            app:startIconDrawable="@drawable/ic_baseline_pencil"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="314dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="@={viewModel.request}"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/containedButton_makeRequest"
+            android:layout_marginTop="@dimen/top_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/cyan_300"
+            android:text="@string/button_request"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="530dp" />
+
+
+    </LinearLayout>
+</layout>

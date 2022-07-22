@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.uca.recycluster.ui.appcontent.viewmodel.NewPostViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/new_post_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.appcontent.view.fragments.NewPostFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bkgd_color">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xlarge_gap"
+                android:text="@string/NewPost"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/ImageView_Dimension"
+                android:layout_height="@dimen/ImageView_Dimension"
+                android:layout_marginTop="@dimen/default_gap"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_newPostTitle"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_gap"
+                android:layout_marginTop="@dimen/xxlarge_gap"
+                android:hint="@string/NewPostTitle"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:startIconDrawable="@drawable/ic_baseline_pencil">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@={viewModel.title}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:background="@drawable/bg_spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xxxlarge_gap"
+                android:layout_marginHorizontal="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_newPostTitle"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_newPostTitle"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_newPostTitle"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_newPostDescription"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:hint="@string/NewPostDescription"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_category"
+                app:layout_constraintStart_toStartOf="@+id/spinner_category"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_category"
+                app:startIconDrawable="@drawable/ic_baseline_article">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={viewModel.description}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/containedButton_CreatePost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_gap"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:backgroundTint="@color/cyan_300"
+                android:text="@string/button_createPost"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_newPostDescription"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_newPostDescription"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_newPostDescription"
+                app:layout_constraintVertical_bias="0.2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

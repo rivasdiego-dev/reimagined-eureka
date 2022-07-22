@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Image_View"
+                android:layout_width="@dimen/perfil_size"
+                android:layout_height="@dimen/perfil_size"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:backgroundTint="@color/black"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_person_black"
+                app:layout_constraintBottom_toTopOf="@+id/img_post"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:text="@string/user"
+                android:textSize="@dimen/default_font_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_Image_View"
+                app:layout_constraintStart_toEndOf="@id/profile_Image_View"
+                app:layout_constraintTop_toTopOf="@id/profile_Image_View" />
+
+            <ImageView
+                android:id="@+id/img_post"
+                android:background="@color/bkgd_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/image_post" />
+
+            <TextView
+                android:id="@+id/titlePost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:singleLine="true"
+                android:text="@string/title"
+                android:textSize="@dimen/default_font_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_post" />
+
+            <TextView
+                android:id="@+id/descriptionPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_gap"
+                android:layout_marginBottom="@dimen/small_gap"
+                android:singleLine="false"
+                android:text="@string/description"
+                android:textSize="@dimen/medium_font_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titlePost" />
+
+            <ImageView
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:background="@color/zinc_200"
+                android:layout_height="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/to_divide_bar" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+

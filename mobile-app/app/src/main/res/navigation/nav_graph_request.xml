@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_request"
+    app:startDestination="@id/detailedPostFragment">
+
+    <fragment
+        android:id="@+id/detailedPostFragment"
+        android:name="com.uca.recycluster.ui.request.view.fragments.DetailedPostFragment"
+        android:label="DetailedPostFragment"
+        tools:layout="@layout/fragment_detailed_post" >
+        <action
+            android:id="@+id/action_detailedPostFragment_to_makeRequestFragment"
+            app:destination="@id/makeRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeRequestFragment"
+        android:name="com.uca.recycluster.ui.request.view.fragments.MakeRequestFragment"
+        android:label="MakeRequestFragment"
+        tools:layout="@layout/fragment_make_request" >
+        <action
+            android:id="@+id/action_makeRequestFragment_to_detailedPostFragment"
+            app:destination="@id/detailedPostFragment" />
+    </fragment>
+</navigation>

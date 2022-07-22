@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <navigation xmlns:android="http://schemas.android.com/apk/res/android" -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_maincontent"
+    app:startDestination="@id/feedFragment">
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.uca.recycluster.ui.appcontent.view.fragments.FeedFragment"
+        android:label="FeedFragment"
+        tools:layout="@layout/fragment_feed">
+        <action
+            android:id="@+id/action_feedFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="com.uca.recycluster.ui.appcontent.view.fragments.NewPostFragment"
+        android:label="NewPostFragment"
+        tools:layout="@layout/fragment_newpost" >
+        <action
+            android:id="@+id/action_newPostFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.uca.recycluster.ui.appcontent.view.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/moreInfoFragment"
+        android:name="com.uca.recycluster.ui.appcontent.view.fragments.MoreInfoFragment"
+        android:label="MoreInfoFragment"
+        tools:layout="@layout/fragment_more_info"/>
+</navigation>
+<!-- Language: xml -->

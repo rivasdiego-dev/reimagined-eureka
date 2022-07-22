@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Recycluster</string>
+    <string name="button_login">Log in</string>
+    <string name="button_signup">Sign Up</string>
+    <string name="recycluster">Recycluster</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="passwordConfirmation">Confirm Password</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Phone Number</string>
+    <string name="recoverPassword">Recover your password</string>
+    <string name="recoverPasswordButton">Restore Password</string>
+    <string name="recycled">Recycled</string>
+    <string name="to_recycle">To Recycle</string>
+    <string name="NewPost">New Post</string>
+    <string name="Select_image">Pick image</string>
+    <string name="NewPostTitle">Title</string>
+    <string name="NewPostCategory">Category</string>
+    <string name="category_plastic">Plastic</string>
+    <string name="category_glass">Glass</string>
+    <string name="category_paper">Paper</string>
+    <string name="NewPostDescription">Description</string>
+    <string name="button_createPost">Create New Post</string>
+    <string name="profile">Profile</string>
+    <string name="newpost">New Post</string>
+    <string name="feed">Feed</string>
+    <string name="appIcon">AppIcon</string>
+    <string name="more_info_text">More Info</string>
+    <string name="Headline1_MoreInfo">How does Recycluster work?</string>
+    <string name="Recycluster_Work">Recysluster is a community where people interested in recycling can make unpaid exchanges of materials to be recycled. Once they have been recycled, their results will be published to inspire more people.</string>
+    <string name="Headline2_MoreInfo">About Us</string>
+    <string name="Recycluster_About">We are a movement committed to the environment, our main objective is to motivate Salvadoran society to adopt recycling in their lives.</string>
+    <string name="Headline3_MoreInfo">Get points and earn new badges</string>
+    <string name="Emblem1_Points">0</string>
+    <string name="Emblem2_Points">1,000</string>
+    <string name="Emblem3_Points">2,000</string>
+    <string name="Emblem4_Points">3,000</string>
+    <string name="Emblem5_Points">4,000</string>
+    <string name="moreInfo_Button">View in browser</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_request">Request</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="why_are_you_reporting_this_post">Why are you reporting this post?</string>
+    <string name="button_report">Report</string>
+    <string name="cancel">Cancel</string>
+    <string name="request_subtitle">What are you going to do with this product?</string>
+    <string name="request_reason">Brief explanation of your plans…</string>
+    <string name="request_title">Make a request</string>
+    <string name="button_share">Share</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="number">77777777</string>
+    <string name="my_requests">My Requests</string>
+    <string name="help">Help</string>
+    <string name="logOut">Log Out</string>
+    <string name="to_divide_bar">to-divide</string>
+    <string name="image_post">image_post</string>
+    <string name="emblem">emblem</string>
+    <string name="points">0</string>
+    <string name="user_name">%1$s</string>
+
+
+    <string-array name="categories">
+        <item>PET</item>
+        <item>Plastic</item>
+        <item>Tires</item>
+    </string-array>
+</resources>

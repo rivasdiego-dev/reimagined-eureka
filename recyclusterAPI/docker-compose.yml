@@ -1,0 +1,28 @@
+version: "1"
+services:
+  app:
+    container_name: app
+    restart: always
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/recycluster
+      - DEBUG=recycluster:*
+      - JWT_SECRET=Awerqu@SSHESECRETOQR@!!asda123
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    image: mongo
+    ports:
+      - "127.0.0.1:27017:27017"
+    command:
+      - "--logpath"
+      - "/var/log/mongodb/mongod.log"
+volumes:
+  mongodb:
+  mongodb_config:  

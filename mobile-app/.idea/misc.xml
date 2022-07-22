@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/drawable/bg_spinner_category.xml" value="0.3665" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/drawable/ic_baseline_arrow_drop_down.xml" value="0.3675" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/drawable/ic_baseline_person.xml" value="0.177" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/drawable/rounded_rectangle.xml" value="0.3525" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/drawable/user_emblem_background.xml" value="0.3665" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout-v26/fragment_detailed_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/activity_main_content.xml" value="0.34375" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_detailed_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_feed.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_forgotpassword.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_login.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_make_request.xml" value="0.33" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_more_info.xml" value="0.1" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_newpost.xml" value="0.33" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/fragment_signup.xml" value="0.33" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/layout/item_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DiegoRivas/Documents/UCA/MOVILES/PROYECTO/poryecto-recycluster/app/src/main/res/menu/main_menu.xml" value="0.31875" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/fragment_detailed_post.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/fragment_feed.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/fragment_make_request.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/fragment_newpost.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/fragment_profile.xml" value="0.47231833910034604" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/poryecto-recycluster/app/src/main/res/layout/item_post.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout-v26/fragment_detailed_post.xml" value="0.1" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/activity_main_content.xml" value="0.16" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/activity_main_menu.xml" value="0.17850877192982456" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/activity_main_menuheader.xml" value="0.17850877192982456" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/activity_request.xml" value="0.1986842105263158" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_detailed_post.xml" value="0.176" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_feed.xml" value="0.264" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_forgotpassword.xml" value="0.2118421052631579" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_make_request.xml" value="0.2118421052631579" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_more_info.xml" value="0.2118421052631579" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_newpost.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_perfil.xml" value="0.2118421052631579" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/fragment_signup.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/item_finishPost.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/layout/item_post.xml" value="0.264" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/Proyecto/poryecto-recycluster/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2118421052631579" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/poryecto-recycluster/app/src/main/res/layout/activity_main_menu.xml" value="0.2515625" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/poryecto-recycluster/app/src/main/res/layout/fragment_feed.xml" value="0.2515625" />
+        <entry key="..\:/Users/dsoli/OneDrive/Escritorio/Ciclo-01-2022/P_movil/poryecto-recycluster/app/src/main/res/layout/fragment_profile.xml" value="0.12234042553191489" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

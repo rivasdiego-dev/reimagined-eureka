@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.uca.recycluster.ui.loginSignUp.viewmodel.LoginViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/login_parent"
+        android:background="@color/bkgd_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.loginSignUp.view.fragments.LoginFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/appIcon" />
+
+
+            <TextView
+                android:id="@+id/textView_appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/recycluster"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputLayoutStyle"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:id="@+id/outlinedTextField_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/xxlarge_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="@string/user"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/textView_appName"
+                app:layout_constraintStart_toStartOf="@+id/textView_appName"
+                app:layout_constraintTop_toBottomOf="@+id/textView_appName"
+                app:startIconDrawable="@drawable/ic_baseline_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@={viewModel.userField}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_password"
+                style="@style/LoginTextInputLayoutStyle"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="@string/password"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_username"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_username"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_username"
+                app:startIconDrawable="@drawable/ic_baseline_key"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@={viewModel.passwordField}"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/containedButton_LogIn"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cyan_300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:text="@string/button_login"
+                android:onClick="@{()-> viewModel.onLogin()}"
+                app:layout_constraintBottom_toTopOf="@+id/outlinedButton_SignUp"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_password"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_password" />
+
+            <Button
+                android:id="@+id/outlinedButton_SignUp"
+                style="@style/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:text="@string/button_signup"
+                app:layout_constraintBottom_toTopOf="@+id/textView_recoverPassword"
+                app:layout_constraintEnd_toEndOf="@+id/containedButton_LogIn"
+                app:layout_constraintStart_toStartOf="@+id/containedButton_LogIn" />
+
+            <TextView
+                android:id="@+id/textView_recoverPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/top_margin"
+                android:text="@string/forgot_your_password"
+                android:textColor="@color/cyan_300"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedButton_SignUp"
+                app:layout_constraintStart_toStartOf="@+id/outlinedButton_SignUp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
+

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.uca.recycluster.ui.loginSignUp.viewmodel.LoginViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/signup_parent"
+        android:background="@color/bkgd_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.loginSignUp.view.fragments.SignUpFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/recycluster"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputLayoutStyle"
+
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:id="@+id/outlinedTextField_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/xxlarge_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="@string/user"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/textView_appName"
+                app:layout_constraintStart_toStartOf="@+id/textView_appName"
+                app:layout_constraintTop_toBottomOf="@+id/textView_appName"
+                app:startIconDrawable="@drawable/ic_baseline_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@={viewModel.newUsername}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_email"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_username"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_username"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_username"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                app:startIconDrawable="@drawable/ic_baseline_mail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:text="@={viewModel.newEmail}"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_phone"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_email"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_email"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_email"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                app:startIconDrawable="@drawable/ic_baseline_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:text="@={viewModel.newPhone}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_password"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="@string/password"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_phone"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_phone"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_phone"
+                app:startIconDrawable="@drawable/ic_baseline_key"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:text="@={viewModel.newPassword}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField_confirmPassword"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="@string/passwordConfirmation"
+                android:textColorHint="@color/white"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_password"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_password"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_password"
+                app:startIconDrawable="@drawable/ic_baseline_key"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:text="@={viewModel.newPassword2}"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/containedButton_SingUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:backgroundTint="@color/cyan_300"
+                android:text="@string/button_signup"
+                android:onClick="@{()-> viewModel.onCreateUserPrev()}"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/outlinedTextField_confirmPassword"
+                app:layout_constraintStart_toStartOf="@+id/outlinedTextField_confirmPassword"
+                app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_confirmPassword" />
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
