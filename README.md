@@ -6,14 +6,6 @@ Desarrollar una aplicación móvil de tipo red social que sirva para iniciar y p
 intercambios de productos reciclables con la intención de fomentar la reutilización de
 materiales a desechar
 
-### Integrantes
-
-| Nombre  | Carné  |
-|:---|:---:|
-|Daniel Vladimir Solis Marroquin | 00209020 |
-|Carlos Eduardo Mercado Gutiérrez | 00058820 |
-|José Miguel Acosta Vásquez|00008020|
-|Diego José Rivas Fuentes|00121520|
 
 ## USUARIOS PARA PROBAR LA APLICACION  
 
